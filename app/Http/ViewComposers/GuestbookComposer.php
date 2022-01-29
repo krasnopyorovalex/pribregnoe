@@ -18,10 +18,12 @@ class GuestbookComposer
     public function compose(View $view)
     {
         if (! self::$guestbook) {
-            self::$guestbook = $this->dispatch(new GetAllGuestbookQuery(true, 10)) ?: [];
+            self::$guestbook = $this->dispatch(new GetAllGuestbookQuery(true, 10));
         }
 
-        $view->with('guestbookLast', self::$guestbook->take(3));
+        $guestbookLast = self::$guestbook->count() ? self::$guestbook->take(3) : collect([]);
+
+        $view->with('guestbookLast', $guestbookLast);
         $view->with('guestbookAll', self::$guestbook);
     }
 }
