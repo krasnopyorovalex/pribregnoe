@@ -47,7 +47,7 @@ class GetAllGuestbookQuery
             $result = $guestbooks->paginate($this->limit, array('*'), 'page', intval(request('page')));
 
             if (! $result->count()) {
-                throw new NotFoundHttpException();
+                return [];
             }
 
             return $result;
