@@ -19,7 +19,7 @@ class UpdateOurServiceRequest extends Request
             'description' => 'max:512',
             'text' => 'string|nullable',
             'preview' => 'string|nullable',
-            'image' => 'image',
+            'image' => 'nullable|mimes:jpeg,png,jpg,svg',
             'imageAlt' => 'string|max:255',
             'imageTitle' => 'string|max:255',
             'showed_in_main' => 'digits_between:0,1',

@@ -22,7 +22,7 @@ class CreatePageRequest extends Request
             'is_published' => 'digits_between:0,1',
             'slider_id' => 'integer|exists:sliders,id|nullable',
             'gallery_id' => 'integer|exists:galleries,id|nullable',
-            'image' => 'image'
+            'image' => 'nullable|mimes:jpeg,png,jpg,svg'
         ];
     }
 

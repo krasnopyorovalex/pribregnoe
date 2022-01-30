@@ -13,7 +13,7 @@ class CreateGalleryImageRequest extends Request
     public function rules()
     {
         return [
-            'upload' => 'image',
+            'upload' => 'mimes:jpeg,png,jpg,svg',
             'galleryId' => 'integer'
         ];
     }

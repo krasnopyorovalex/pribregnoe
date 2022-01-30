@@ -19,7 +19,7 @@ class UpdateArticleRequest extends Request
             'description' => 'max:512',
             'text' => 'required|string',
             'is_published' => 'digits_between:0,1',
-            'image' => 'image',
+            'image' => 'nullable|mimes:jpeg,png,jpg,svg',
             'imageAlt' => 'string|max:255',
             'imageTitle' => 'string|max:255',
             'alias' => [

@@ -20,7 +20,7 @@ class UpdatePageRequest extends Request
             'description' => 'string|max:512',
             'text' => 'string|nullable',
             'is_published' => 'digits_between:0,1',
-            'image' => 'image',
+            'image' => 'nullable|mimes:jpeg,png,jpg,svg',
             'imageAlt' => 'string|max:255',
             'imageTitle' => 'string|max:255',
             'slider_id' => 'integer|exists:sliders,id|nullable',

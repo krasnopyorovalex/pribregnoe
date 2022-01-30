@@ -24,7 +24,7 @@ class CreateServiceRequest extends Request
             'is_published' => 'digits_between:0,1',
             'pos' => 'integer|min:0|max:255',
             'gallery_id' => 'integer|exists:galleries,id|nullable',
-            'image' => 'image'
+            'image' => 'nullable|mimes:jpeg,png,jpg,svg'
         ];
     }
 
