@@ -140,9 +140,6 @@
 
     <div class="mobile__menu">
         @includeWhen($menu->get('menu_header'), 'layouts.menus.footer_mobile', ['menu' => $menu])
-        <div class="socials">
-            @include('layouts.partials.socials')
-        </div>
         <div class="close-menu-btn"></div>
         <div class="menu-overlay-mob"></div>
     </div>

@@ -41,8 +41,7 @@
         </div>
     </main>
 
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afadb7049d30c1236c76df9c1791daa6b18d14b1c41dfe59ea34edb08f0adf822&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>rceType=constructor&amp;scroll=true"></script>
-
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afadb7049d30c1236c76df9c1791daa6b18d14b1c41dfe59ea34edb08f0adf822&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     @includeWhen($page->gallery, 'layouts.sections.gallery', ['gallery' => $page->gallery])
 
 @endsection
