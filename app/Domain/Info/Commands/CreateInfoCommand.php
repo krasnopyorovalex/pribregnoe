@@ -32,7 +32,7 @@ class CreateInfoCommand
     public function handle(): bool
     {
         $info = new Info();
-        $info->fill($this->request->all());
+        $info->fill($this->request->validated());
         $info->published_at = date('Y-m-d');
         $info->save();
 

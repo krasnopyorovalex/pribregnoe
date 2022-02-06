@@ -22,7 +22,7 @@ class Info extends Model
     /**
      * @var array
      */
-    protected $guarded = [];
+    protected $guarded = ['image'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
@@ -45,7 +45,7 @@ class Info extends Model
      */
     public function getTitle(): string
     {
-        return sprintf('%s - новости виллы SANY от %s', $this->title, $this->published_at->format('d.m.Y'));
+        return sprintf('%s - новости гостевого дома "Счастье вам" от %s', $this->title, $this->published_at->format('d.m.Y'));
     }
 
     /**
@@ -53,6 +53,6 @@ class Info extends Model
      */
     public function getDescription(): string
     {
-        return sprintf('Новости виллы SANY в Николаевке - %s от %s', $this->name, $this->published_at->format('d.m.Y'));
+        return sprintf('Новости гостевого дома "Счасте вам" в Прибрежном - %s от %s', $this->name, $this->published_at->format('d.m.Y'));
     }
 }
