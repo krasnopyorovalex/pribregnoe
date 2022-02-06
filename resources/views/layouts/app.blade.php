@@ -54,7 +54,7 @@
                                     <svg class="icon icon__address">
                                         <use xlink:href="{{ asset('img/symbols.svg#address') }}"></use>
                                     </svg>
-                                    Крым, Прибрежное, ул. Чудесная, 2/8
+                                    Крым, Прибрежное, ул. Солнечная, 2
                                 </div>
                             </div>
                             <div class="header__contacts-socials">
