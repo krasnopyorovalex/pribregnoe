@@ -14,18 +14,12 @@
     <link rel="canonical" href="@yield('canonical', request()->url())"/>
 </head>
 <body>
-    <div class="loader">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-
     <header class="header" id="sticky">
         <div class="container">
             <div class="row">
                 <div class="col-2">
                     <div class="header__logo">
-                        <a href="{{ route('page.show') }}"><img src="{{ asset('img/logo.png') }}" alt="Вилла Сани в Николаевке" title="Вилла SANY в Николаевке"></a>
+                        <a href="{{ route('page.show') }}"><img src="{{ asset('img/logo.png') }}" alt="Гостевой дом Счастье вам" title="Гостевой дом Счастье вам"></a>
                     </div>
                 </div>
                 <div class="col-10">
@@ -36,15 +30,15 @@
                                     <svg class="icon">
                                         <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
                                     </svg>
-                                    <a href="tel:+79787248938">+7 978 724 89 38</a>
+                                    <a href="tel:+79781771802">+7 978 177-18-02</a>
                                 </div>
                                 <div>
-                                    <a href="https://wa.me/79787248938" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://wa.me/79781771802" target="_blank" rel="noopener noreferrer">
                                         <svg class="icon__whatsapp">
                                             <use xlink:href="{{ asset('img/symbols.svg#whatsapp') }}"></use>
                                         </svg>
                                     </a>
-                                    <a href="viber://add?number=79787248938" target="_blank" rel="noopener noreferrer">
+                                    <a href="viber://add?number=79781771802" target="_blank" rel="noopener noreferrer">
                                         <svg class="icon__viber">
                                             <use xlink:href="{{ asset('img/symbols.svg#viber') }}"></use>
                                         </svg>
@@ -54,17 +48,17 @@
                                     <svg class="icon">
                                         <use xlink:href="{{ asset('img/symbols.svg#email') }}"></use>
                                     </svg>
-                                    <a href="mailto:dom2008@mail.ru">dom2008@mail.ru</a>
+                                    <a href="mailto:schastie.vam@mail.ru">schastie.vam@mail.ru</a>
                                 </div>
                                 <div>
                                     <svg class="icon icon__address">
                                         <use xlink:href="{{ asset('img/symbols.svg#address') }}"></use>
                                     </svg>
-                                    Крым, Николаевка, ул. Чудесная, 2/8
+                                    Крым, Прибрежное, ул. Чудесная, 2/8
                                 </div>
                             </div>
                             <div class="header__contacts-socials">
-                                @include('layouts.partials.socials')
+{{--                                @include('layouts.partials.socials')--}}
                             </div>
                         </div>
                         <div class="header__menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
@@ -88,19 +82,19 @@
                             <svg class="icon">
                                 <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
                             </svg>
-                            <a href="tel:+79787248938">+7 978 724 89 38</a>
+                            <a href="tel:+79781771802">+7 978 177-18-02</a>
                         </div>
                         <div>
                             <svg class="icon">
                                 <use xlink:href="{{ asset('img/symbols.svg#email') }}"></use>
                             </svg>
-                            <a href="mailto:dom2008@mail.ru">dom2008@mail.ru</a>
+                            <a href="mailto:schastie.vam@mail.ru">schastie.vam@mail.ru</a>
                         </div>
                         <div>
                             <svg class="icon icon__address">
                                 <use xlink:href="{{ asset('img/symbols.svg#address') }}"></use>
                             </svg>
-                            297546, Крым, п.Николаевка, ул. Чудесная, 2, коттедж 8
+                            Крым, Прибрежное, ул. Солнечная, 2
                         </div>
                     </div>
                 </div>
@@ -111,10 +105,10 @@
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="title right">Мы в соцсетях</div>
-                    <div class="footer__socials">
-                        @include('layouts.partials.socials')
-                    </div>
+{{--                    <div class="title right">Мы в соцсетях</div>--}}
+{{--                    <div class="footer__socials">--}}
+{{--                        @include('layouts.partials.socials')--}}
+{{--                    </div>--}}
                 </div>
             </div>
             <div class="row">
@@ -124,17 +118,17 @@
             </div>
             <div class="row flex-center">
                 <div class="col-6">
-                    <div class="copyright">© 2008-{{ date('Y') }} Вилла villa-sany.ru</div>
+                    <div class="copyright">© {{ date('Y') }} Гостевой дом "Счастье вам"</div>
                 </div>
                 <div class="col-6">
                     <div class="develop">
                         <div class="develop__link">
-                            <a href="https://krasber.ru" rel="nofollow" target="_blank">
+                            <a href="https://krasber.ru" target="_blank">
                                 Создание, продвижение и <br/>техподдержка сайтов
                             </a>
                         </div>
                         <div class="develop__logo">
-                            <a href="https://krasber.ru" target="_blank" rel="nofollow">
+                            <a href="https://krasber.ru" target="_blank">
                                 <img src="{{ asset('img/krasber.svg') }}" alt="Веб-студия Красбер">
                             </a>
                         </div>

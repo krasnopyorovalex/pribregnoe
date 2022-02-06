@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($page->image ? $page->image->path : 'img/logo.png') }}">
     <meta property="og:description" content="{{ $page->description }}">
-    <meta property="og:site_name" content="Вилла «SANY»">
+    <meta property="og:site_name" content="Гостевой дом «Счастье вам»">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
@@ -41,7 +41,7 @@
         </div>
     </main>
 
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ENeTGXeZ9cH10M53764cuvDqvwp7ZsMn&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afadb7049d30c1236c76df9c1791daa6b18d14b1c41dfe59ea34edb08f0adf822&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>rceType=constructor&amp;scroll=true"></script>
 
     @includeWhen($page->gallery, 'layouts.sections.gallery', ['gallery' => $page->gallery])
 
