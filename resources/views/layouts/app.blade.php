@@ -101,7 +101,7 @@
                 <div class="col-5">
                     <div class="title">Полезные материалы</div>
                     <div class="footer__menu">
-                        @includeWhen($menu->get('menu_header'), 'layouts.menus.footer', ['menu' => $menu])
+                        @includeWhen($menu->get('menu_footer'), 'layouts.menus.footer', ['menu' => $menu])
                     </div>
                 </div>
                 <div class="col-2">
