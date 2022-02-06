@@ -18,11 +18,11 @@
 
     @include('layouts.sections.advantages')
 
-    @includeWhen($services, 'layouts.sections.services')
+    @includeWhen($services->count(), 'layouts.sections.services')
 
-    @includeWhen($ourServicesInMain, 'layouts.sections.our_services')
+    @includeWhen($ourServicesInMain->count(), 'layouts.sections.our_services')
 
-    @includeWhen($guestbookLast, 'layouts.sections.guestbook')
+    @includeWhen($guestbookLast->count(), 'layouts.sections.guestbook')
 
     @include('layouts.sections.booking')
 
