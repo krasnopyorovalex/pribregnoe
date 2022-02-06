@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-2">
                     <div class="header__logo">
-                        <a href="{{ route('page.show') }}"><img src="{{ asset('img/logo.png') }}" alt="Гостевой дом Счастье вам" title="Гостевой дом Счастье вам"></a>
+                        <a href="{{ route('page.show') }}"><img src="{{ asset('img/logo.jpg') }}" alt="Гостевой дом Счастье вам" title="Гостевой дом Счастье вам"></a>
                     </div>
                 </div>
                 <div class="col-10">
