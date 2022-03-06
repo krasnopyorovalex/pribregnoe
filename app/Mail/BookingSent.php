@@ -28,10 +28,9 @@ class BookingSent extends Mailable
     /**
      * @return BookingSent
      */
-    public function build()
+    public function build(): BookingSent
     {
-        return $this->from('Sany0629@yandex.ru')
-            ->subject('Форма: бронирование номера')
+        return $this->subject('Форма: бронирование номера')
             ->view('emails.booking', [
                 'data' => $this->data
             ]);
