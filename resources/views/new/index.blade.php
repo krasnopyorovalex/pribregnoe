@@ -6,7 +6,7 @@
     <meta property="og:title" content="{{ $new->getTitle() }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->getUri() }}">
-    <meta property="og:image" content="{{ asset($new->image ? $new->image->path : 'img/logo.png') }}">
+    <meta property="og:image" content="{{ asset($new->image ? $new->image->path : 'img/logo.jpg') }}">
     <meta property="og:description" content="{{ $new->getDescription() }}">
     <meta property="og:site_name" content="Гостевой дом «Счастье вам»">
     <meta property="og:locale" content="ru_RU">
